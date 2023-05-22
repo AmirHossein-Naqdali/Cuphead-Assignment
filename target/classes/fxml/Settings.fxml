@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="views.screens.Settings">
+
+    <Text id="title" text="Settings"/>
+    <Label text="Difficulty Level"/>
+    <HBox>
+        <RadioButton text="Easy">
+            <toggleGroup>
+                <ToggleGroup fx:id="group"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton selected="true" text="Medium" toggleGroup="$group"/>
+        <RadioButton text="Hard" toggleGroup="$group"/>
+    </HBox>
+    <HBox>
+        <Button text="Mute Music" onMouseClicked="#muteGameSound"/>
+        <Button text="Back" onMouseClicked="#backToMainMenu"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../CSS/Common.css"/>
+        <URL value="@../CSS/Settings.css"/>
+    </stylesheets>
+</VBox>

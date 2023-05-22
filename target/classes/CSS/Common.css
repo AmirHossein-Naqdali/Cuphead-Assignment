@@ -1,0 +1,62 @@
+VBox {
+    -fx-background-image: url("../Images/Background/6.png");
+    -fx-alignment: center;
+    -fx-spacing: 10;
+    -fx-pref-width: 900;
+    -fx-pref-height: 600;
+}
+
+Button {
+    -fx-focus-traversable: false;
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+    -fx-border-radius: 2;
+    -fx-border-color: #262626;
+    -fx-min-height: 30;
+    -fx-font-family: "Yu Gothic Light";
+    -fx-font-size: 15;
+}
+
+Label {
+    -fx-font-family: "Yu Gothic Light";
+    -fx-font-size: 15;
+    -fx-font-smoothing-type: gray;
+    -fx-text-fill: #5d5353;
+    -fx-translate-x: -100;
+    -fx-translate-y: +7;
+}
+
+Hyperlink {
+    -fx-focus-traversable: false;
+    -fx-font-family: "Yu Gothic Light";
+    -fx-font-size: 15;
+    -fx-text-fill: #565656;
+}
+
+TextField {
+    -fx-focus-traversable: false;
+    -fx-border-color: #363636;
+    -fx-border-radius: 2;
+    -fx-max-width: 280;
+    -fx-min-height: 15;
+    -fx-border-style: solid;
+    -fx-font-family: "Yu Gothic Light";
+    -fx-text-fill: #605a5a;
+}
+
+TextField:focused {
+    -fx-border-style: solid;
+    -fx-border-color: #63a6dc;
+}
+
+HBox {
+    -fx-spacing: 6;
+    -fx-alignment: center;
+}
+
+#title {
+    -fx-font-family: Atlas;
+    -fx-underline: true;
+    -fx-font-size: 60;
+    -fx-translate-y: -30;
+}

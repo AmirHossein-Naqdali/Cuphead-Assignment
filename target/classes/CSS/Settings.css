@@ -1,0 +1,16 @@
+Label{
+    -fx-translate-x: 5;
+    -fx-translate-y: 22;
+    -fx-font-size: 20;
+}
+
+VBox{
+    -fx-translate-y: -30;
+    -fx-spacing: 30;
+}
+
+RadioButton{
+    -fx-font-family: "Yu Gothic Light";
+    -fx-font-size: 15;
+    -fx-cursor: hand;
+}

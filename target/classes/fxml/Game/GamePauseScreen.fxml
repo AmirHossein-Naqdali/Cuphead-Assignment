@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.screens.Game.GamePauseScreen" stylesheets="@../../CSS/Common.css">
+
+    <Text id="title" text="Pause"/>
+    <HBox>
+        <Button text="Resume" onMouseClicked="#resume"/>
+        <Button text="Restart" onMouseClicked="#restart"/>
+    </HBox>
+    <HBox>
+        <Button text="Mute" onMouseClicked="#mute"/>
+        <Button text="Exit Game" onMouseClicked="#backToMainMenu"/>
+    </HBox>
+</VBox>

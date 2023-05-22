@@ -1,0 +1,27 @@
+#parent {
+    -fx-background-image: url("../Images/Background/8.png"), url("../Images/Background/6.png"),
+    url("../Images/Background/5.png"), url("../Images/Background/4.png"), url("../Images/Background/2.png"),
+    url("../Images/Background/3.png"), url("../Images/Background/1.png"), url("../Images/Background/7.png");
+    -fx-background-position: bottom, bottom, bottom right, bottom, bottom, bottom, bottom, top;
+    -fx-background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x;
+}
+
+ProgressBar{
+    -fx-translate-x: 10;
+}
+
+Text{
+    -fx-translate-y: -1;
+    -fx-translate-x: -15;
+}
+
+HBox{
+    -fx-spacing: 60;
+}
+
+Button{
+    -fx-max-height: 20;
+    -fx-font-size: 12;
+    -fx-translate-y: 2;
+    -fx-translate-x: 50;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="views.screens.LoginMenu" stylesheets="@../CSS/Common.css">
+
+    <Text id="title" text="Login"/>
+    <Label text="username"/>
+    <TextField fx:id="username" promptText="username"/>
+    <Label text="password"/>
+    <TextField fx:id="password" promptText="password"/>
+    <Hyperlink onMouseClicked="#registerMenu" text="Create Account"/>
+    <HBox>
+        <Button onMouseClicked="#login" text="login"/>
+        <Button onMouseClicked="#loginAsGuest" text="login as guest"/>
+    </HBox>
+    <Text fx:id="error" fill="#ff0000"/>
+</VBox>

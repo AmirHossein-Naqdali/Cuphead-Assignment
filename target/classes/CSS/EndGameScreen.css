@@ -1,0 +1,7 @@
+Text{
+    -fx-font-size: 25;
+}
+
+HBox{
+    -fx-translate-y: 10;
+}

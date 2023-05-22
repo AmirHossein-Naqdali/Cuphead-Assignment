@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.screens.RegisterMenu" stylesheets="@../CSS/Common.css">
+
+    <Text id="title" text="Register"/>
+    <Label text="username"/>
+    <TextField fx:id="username" promptText="username"/>
+    <Label text="nickname"/>
+    <TextField fx:id="nickname" promptText="nickname"/>
+    <Label text="password"/>
+    <TextField fx:id="password" promptText="password"/>
+    <Hyperlink text="Login Menu" onMouseClicked="#loginMenu"/>
+    <Button text="register" onMouseClicked="#register"/>
+
+    <Text fx:id="error" fill="#fa0a0a"/>
+</VBox>

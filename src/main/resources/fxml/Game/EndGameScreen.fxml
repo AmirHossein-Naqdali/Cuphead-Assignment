@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.screens.Game.EndGameScreen">
+
+    <Text fx:id="title"/>
+    <Text fx:id="score"/>
+    <Text fx:id="time"/>
+    <HBox>
+        <Button text="Restart" onMouseClicked="#restart"/>
+        <Button text="Exit" onMouseClicked="#backToMainMenu"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../../CSS/Common.css"/>
+        <URL value="@../../CSS/EndGameScreen.css"/>
+    </stylesheets>
+</VBox>

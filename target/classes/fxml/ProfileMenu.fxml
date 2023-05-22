@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="views.screens.ProfileMenu" stylesheets="@../CSS/Common.css">
+    <Text id="title" text="Profile"/>
+    <Text fx:id="usernameLog"/>
+    <TextField fx:id="username" promptText="new username"/>
+    <Button onMouseClicked="#changeUsername" text="Change Username"/>
+    <Text fx:id="passwordLog"/>
+    <TextField fx:id="oldPassword" promptText="current password"/>
+    <TextField fx:id="newPassword" promptText="new password"/>
+    <Button onMouseClicked="#changePassword" text="Change Password"/>
+    <Button onMouseClicked="#deleteAccount" text="Delete Account"/>
+    <HBox>
+        <Button onMouseClicked="#logout" text="Logout"/>
+        <Button onMouseClicked="#backToMainMenu" text="Back"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.screens.MainMenu" stylesheets="@../CSS/Common.css">
+
+    <Text id="title" text="Main Menu"/>
+    <Button text="Start New Game" onMouseClicked="#startNewGame"/>
+    <HBox>
+        <Button text="Settings" onMouseClicked="#settings"/>
+        <Button fx:id="profileButton" text="Profile Menu" onMouseClicked="#profileMenu"/>
+    </HBox>
+    <HBox>
+        <Button text="High Scores" onMouseClicked="#showScoreboard"/>
+        <Button text="Logout(Exit)" onMouseClicked="#logout"/>
+    </HBox>
+</VBox>
